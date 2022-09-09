@@ -12,6 +12,8 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    const PASSWORD = '720DF6C2482218518FA20FDC52D4DED7ECC043AB';
+
     protected $fillable = [
         'name',
         'password',

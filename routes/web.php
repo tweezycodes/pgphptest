@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Input user id';
 });
+Route::get('/{user}', [UserController::class, 'show'])->where('user', '[0-9]+');
+Route::post('/', [UserController::class, 'storeComment']);
