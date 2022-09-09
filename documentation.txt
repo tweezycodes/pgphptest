@@ -1,0 +1,21 @@
+**********************************************************************
+
+PHP					8.1.6
+PostgresSQL 		14
+Laravel Framework 	9.28.0
+
+**********************************************************************
+
+please RUN migration and seeder first.
+
+**********************************************************************
+
+ROUTES USED
+
+GET     /{user_id} 	- Display user specific and its comments. 
+(params required)	- append a user id in url eg: /1
+
+POST	/api/ 		- Append new user comment
+(params required)	- [id, password, comment];
+
+**********************************************************************

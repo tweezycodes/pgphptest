@@ -18,4 +18,3 @@ Route::get('/', function () {
     return 'Input user id';
 });
 Route::get('/{user}', [UserController::class, 'show'])->where('user', '[0-9]+');
-Route::post('/', [UserController::class, 'storeComment']);
